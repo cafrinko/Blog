@@ -1,0 +1,28 @@
+span
+  // display: hidden
+
+navbar
+  float: left
+  width: 15em
+  height: 20em
+
+.menu
+  width: 100%
+  height: auto
+
+li
+  width: 100%
+  height: 2em
+
+.color
+  float: left
+  width: 2em
+  height: 2em
+  @include circle($circle-radius: 2em, $circle-border-color: silver)
+  // @each $current-color in $colors-list
+  //   $i: index($colors-list, $current-color)
+  //     #{$i}
+  //     background: $current-color
+  // &:hover
+  //   span
+  //     display: block
