@@ -18,11 +18,14 @@ li
   float: left
   width: 2em
   height: 2em
-  @include circle($circle-radius: 2em, $circle-border-color: silver)
-  // @each $current-color in $colors-list
-  //   $i: index($colors-list, $current-color)
-  //     #{$i}
-  //     background: $current-color
+  border-radius: 5em
+  border: 2px solid silver
+  // @include circle($circle-radius: 2em, $circle-border-color: silver)
+
+@each $current-color in $colors-list
+  $i: index($colors-list, $current-color)
+  li:nth-child(#{$i}) .color
+    background: $current-color
   // &:hover
   //   span
   //     display: block

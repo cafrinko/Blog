@@ -21,8 +21,26 @@ li {
   float: left;
   width: 2em;
   height: 2em;
-  border-radius: 2em;
+  border-radius: 5em;
   border: 2px solid silver; }
+
+li:nth-child(1) .color {
+  background: red; }
+
+li:nth-child(2) .color {
+  background: orange; }
+
+li:nth-child(3) .color {
+  background: yellow; }
+
+li:nth-child(4) .color {
+  background: green; }
+
+li:nth-child(5) .color {
+  background: blue; }
+
+li:nth-child(6) .color {
+  background: purple; }
 
 .header {
   float: right; }
