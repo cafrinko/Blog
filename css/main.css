@@ -4,6 +4,14 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.category {
+  visibility: hidden;
+  width: 100%;
+  height: 2em;
+  vertical-align: middle;
+  transform: translate(50px, 35px);
+  transition-timing-function: ease-in-out; }
+
 navbar {
   float: left;
   width: 15em;
@@ -21,26 +29,69 @@ li {
   float: left;
   width: 2em;
   height: 2em;
+  padding: 0.25em;
   border-radius: 5em;
-  border: 2px solid silver; }
+  border: 5px solid #dadada; }
 
 li:nth-child(1) .color {
-  background: red; }
+  background: red;
+  transition: all 1.5s ease-in-out; }
+  li:nth-child(1) .color:hover {
+    transform: translate(50px, 35px); }
+    li:nth-child(1) .color:hover + .category {
+      transition-delay: 1s;
+      visibility: visible;
+      display: table-cell; }
 
 li:nth-child(2) .color {
-  background: orange; }
+  background: orange;
+  transition: all 1.5s ease-in-out; }
+  li:nth-child(2) .color:hover {
+    transform: translate(50px, 35px); }
+    li:nth-child(2) .color:hover + .category {
+      transition-delay: 1s;
+      visibility: visible;
+      display: table-cell; }
 
 li:nth-child(3) .color {
-  background: yellow; }
+  background: yellow;
+  transition: all 1.5s ease-in-out; }
+  li:nth-child(3) .color:hover {
+    transform: translate(50px, 35px); }
+    li:nth-child(3) .color:hover + .category {
+      transition-delay: 1s;
+      visibility: visible;
+      display: table-cell; }
 
 li:nth-child(4) .color {
-  background: green; }
+  background: green;
+  transition: all 1.5s ease-in-out; }
+  li:nth-child(4) .color:hover {
+    transform: translate(50px, 35px); }
+    li:nth-child(4) .color:hover + .category {
+      transition-delay: 1s;
+      visibility: visible;
+      display: table-cell; }
 
 li:nth-child(5) .color {
-  background: blue; }
+  background: blue;
+  transition: all 1.5s ease-in-out; }
+  li:nth-child(5) .color:hover {
+    transform: translate(50px, 35px); }
+    li:nth-child(5) .color:hover + .category {
+      transition-delay: 1s;
+      visibility: visible;
+      display: table-cell; }
 
 li:nth-child(6) .color {
-  background: purple; }
+  background: purple;
+  transition: all 1.5s ease-in-out; }
+  li:nth-child(6) .color:hover {
+    transform: translate(50px, 35px); }
+    li:nth-child(6) .color:hover + .category {
+      transition-delay: 1s;
+      visibility: visible;
+      display: table-cell; }
 
 .header {
   float: right; }

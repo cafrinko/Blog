@@ -1,5 +1,11 @@
-span
-  // display: hidden
+.category
+  visibility: hidden
+  width: 100%
+  height: 2em
+  // display: table-cell
+  vertical-align: middle
+  transform: translate(50px, 35px)
+  transition-timing-function: ease-in-out
 
 navbar
   float: left
@@ -18,14 +24,31 @@ li
   float: left
   width: 2em
   height: 2em
+  padding: 0.25em
   border-radius: 5em
-  border: 2px solid silver
-  // @include circle($circle-radius: 2em, $circle-border-color: silver)
+  border: 5px solid lighten(silver, 10%)
+
+// @keyframes fadeIn
+//   0%
+//     visibility: hidden
+//   100%
+//     visibility: visible
 
 @each $current-color in $colors-list
   $i: index($colors-list, $current-color)
   li:nth-child(#{$i}) .color
     background: $current-color
-  // &:hover
-  //   span
-  //     display: block
+    transition: all 1.5s ease-in-out
+    &:hover
+      transform: translate(50px, 35px)
+      & + .category
+        transition-delay: 1s
+        // transition: all 1.5s ease-in-out
+        visibility: visible
+        display: table-cell
+// @each $current-category in $categories-list
+//   $i: index($categories-list, $current-category)
+//   li:nth-child(#{$i}) .color:hover
+//     background: black
+    // p:after
+    //   content: $current-category
