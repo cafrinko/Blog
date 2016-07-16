@@ -127,22 +127,26 @@ li:nth-child(6) .color {
     content: "";
     display: block; }
 
-.row {
+.grid {
+  width: 100%;
+  height: 50em; }
+
+.outer-row {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   background: orange;
   width: 100%;
-  height: 50em;
+  height: 100%;
   position: absolute; }
-  .row::after {
+  .outer-row::after {
     clear: both;
     content: "";
     display: block; }
-  .row:last-child {
+  .outer-row:last-child {
     margin-right: 0; }
-  .row .one, .row .two {
+  .outer-row .column {
     display: inline-block;
     text-align: center;
     float: left;
@@ -150,20 +154,40 @@ li:nth-child(6) .color {
     margin: 0;
     height: 100%;
     background: moccasin; }
-  .row .one {
+  .outer-row .one {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%; }
-    .row .one:last-child {
+    .outer-row .one:last-child {
       margin-right: 0; }
-  .row .two {
+    .outer-row .one .row {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      height: 24.5em;
+      margin: 1.5%;
+      background: blue; }
+      .outer-row .one .row:last-child {
+        margin-right: 0; }
+  .outer-row .two {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%; }
-    .row .two:last-child {
+    .outer-row .two:last-child {
       margin-right: 0; }
+    .outer-row .two .row {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      height: 33%;
+      margin: 1%;
+      background: blue; }
+      .outer-row .two .row:last-child {
+        margin-right: 0; }
 
 .header {
   text-align: center;

@@ -7,18 +7,21 @@
   width: 75%
   position: relative
   left: 10%
-  // top: 5em
 
-.row
+.grid
+  width: 100%
+  height: 50em
+
+.outer-row
   +clearfix
   @include span-columns(12)
   background: orange
   width: 100%
-  height: 50em
+  height: 100%
   position: absolute
   // top: 3em
   // left: 5em
-  .one, .two
+  .column
     display: inline-block
     text-align: center
     float: left
@@ -26,10 +29,17 @@
     margin: 0
     height: 100%
     background: moccasin
-
   .one
     @include span-columns(8 of 12)
-    // width: 66%
+    .row
+      @include span-columns(12 of 12)
+      height: 24.5em
+      margin: 1.5%
+      background: blue
   .two
     @include span-columns(4 of 12)
-    // width: 33%
+    .row
+      @include span-columns(12 of 12)
+      height: 33%
+      margin: 1%
+      background: blue
