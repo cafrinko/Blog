@@ -1,0 +1,45 @@
+.wrapper
+  @include outer-container(1920px)
+
+.wrapper
+  background: green
+  +clearfix
+  width: 75%
+  position: relative
+  left: 5em
+  top: 5em
+
+.row
+  +clearfix
+  @include span-columns(12)
+  background: orange
+  width: 100%
+  height: 25em
+  position: absolute
+  // top: 3em
+  // left: 5em
+  .one, .two
+    display: inline-block
+    text-align: center
+    float: left
+    padding: 0
+    margin: 0
+    // width: 45%
+    height: 24em
+    background: moccasin
+  .one
+    @include span-columns(8 of 12)
+    // width: 66%
+  .two
+    @include span-columns(4 of 12)
+    // width: 33%
+
+// .column
+//   display: inline-block
+//   text-align: center
+//   float: left
+//   padding: 1em
+//   margin: 0.5em
+//   // width: 45%
+//   height: 24em
+//   background: moccasin
