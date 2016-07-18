@@ -13,9 +13,9 @@ html {
   left: 0; }
 
 .menu {
-  width: 10em;
+  width: 90%;
   height: 20em;
-  margin: 2.5em; }
+  margin: 1em; }
 
 ul {
   width: 100%;
@@ -28,81 +28,90 @@ li {
 
 .color {
   float: left;
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
   margin-bottom: 1%;
   border-radius: 70%;
   border: 4px solid #dadada; }
 
 .category {
   display: inline-block;
-  background: yellow;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white lightgrey darkgrey;
+  border-radius: 50%;
   visibility: hidden;
   width: 100%;
   height: 1em;
   margin: 0;
-  padding: 0;
-  vertical-align: middle;
+  padding: 0.25em;
+  vertical-align: top;
   text-align: left;
-  transform: translate(3em, 2.5em);
+  transform: translate(-2em, -0.5em);
   transform-origin: left center;
   transition-timing-function: ease-in-out; }
 
 li:nth-child(1) .color {
-  background: red;
+  background: -webkit-radial-gradient(white 0.2%, red);
+  background: radial-gradient(white 0.2%, red);
   transition: all 1.5s ease-in-out; }
   li:nth-child(1) .color:hover {
-    transform: translate(55px, 35px); }
+    transform: translate(40px, 20px); }
     li:nth-child(1) .color:hover + .category {
       transition-delay: 1s;
       visibility: visible;
       display: table-cell; }
 
 li:nth-child(2) .color {
-  background: orange;
+  background: -webkit-radial-gradient(white 0.2%, orange);
+  background: radial-gradient(white 0.2%, orange);
   transition: all 1.5s ease-in-out; }
   li:nth-child(2) .color:hover {
-    transform: translate(55px, 35px); }
+    transform: translate(40px, 20px); }
     li:nth-child(2) .color:hover + .category {
       transition-delay: 1s;
       visibility: visible;
       display: table-cell; }
 
 li:nth-child(3) .color {
-  background: yellow;
+  background: -webkit-radial-gradient(white 0.2%, yellow);
+  background: radial-gradient(white 0.2%, yellow);
   transition: all 1.5s ease-in-out; }
   li:nth-child(3) .color:hover {
-    transform: translate(55px, 35px); }
+    transform: translate(40px, 20px); }
     li:nth-child(3) .color:hover + .category {
       transition-delay: 1s;
       visibility: visible;
       display: table-cell; }
 
 li:nth-child(4) .color {
-  background: green;
+  background: -webkit-radial-gradient(white 0.2%, green);
+  background: radial-gradient(white 0.2%, green);
   transition: all 1.5s ease-in-out; }
   li:nth-child(4) .color:hover {
-    transform: translate(55px, 35px); }
+    transform: translate(40px, 20px); }
     li:nth-child(4) .color:hover + .category {
       transition-delay: 1s;
       visibility: visible;
       display: table-cell; }
 
 li:nth-child(5) .color {
-  background: blue;
+  background: -webkit-radial-gradient(white 0.2%, blue);
+  background: radial-gradient(white 0.2%, blue);
   transition: all 1.5s ease-in-out; }
   li:nth-child(5) .color:hover {
-    transform: translate(55px, 35px); }
+    transform: translate(40px, 20px); }
     li:nth-child(5) .color:hover + .category {
       transition-delay: 1s;
       visibility: visible;
       display: table-cell; }
 
 li:nth-child(6) .color {
-  background: purple;
+  background: -webkit-radial-gradient(white 0.2%, purple);
+  background: radial-gradient(white 0.2%, purple);
   transition: all 1.5s ease-in-out; }
   li:nth-child(6) .color:hover {
-    transform: translate(55px, 35px); }
+    transform: translate(40px, 20px); }
     li:nth-child(6) .color:hover + .category {
       transition-delay: 1s;
       visibility: visible;
@@ -118,10 +127,10 @@ li:nth-child(6) .color {
     display: block; }
 
 .wrapper {
-  background: green;
-  width: 75%;
+  border: 2px solid brown;
+  width: 70%;
   position: relative;
-  left: 10%; }
+  left: 15%; }
   .wrapper::after {
     clear: both;
     content: "";
@@ -129,14 +138,13 @@ li:nth-child(6) .color {
 
 .grid {
   width: 100%;
-  height: 50em; }
+  height: 80em; }
 
 .outer-row {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background: orange;
   width: 100%;
   height: 100%;
   position: absolute; }
@@ -152,8 +160,7 @@ li:nth-child(6) .color {
     float: left;
     padding: 0;
     margin: 0;
-    height: 100%;
-    background: moccasin; }
+    height: 100%; }
   .outer-row .one {
     float: left;
     display: block;
@@ -166,9 +173,9 @@ li:nth-child(6) .color {
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      height: 24.5em;
+      height: 49.25%;
       margin: 1.5%;
-      background: blue; }
+      border: 2px solid brown; }
       .outer-row .one .row:last-child {
         margin-right: 0; }
   .outer-row .two {
@@ -185,14 +192,42 @@ li:nth-child(6) .color {
       width: 100%;
       height: 33%;
       margin: 1%;
-      background: blue; }
+      border: 2px solid brown; }
       .outer-row .two .row:last-child {
         margin-right: 0; }
 
 .header {
   text-align: center;
-  border: 2px solid brown;
   width: 100%; }
+  .header img {
+    margin: 2.5% 0 0 0; }
+
+.row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px; }
+  .row:last-child {
+    margin-right: 0; }
+  .row .rowlet {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    border: 2px solid brown;
+    width: 100%;
+    height: 10%; }
+    .row .rowlet:last-child {
+      margin-right: 0; }
+
+.post .two {
+  width: 100%;
+  height: 50%; }
+.post .three {
+  width: 100%;
+  height: 30%; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
  * v2.0 | 20110126
@@ -262,8 +297,29 @@ body {
 
 h2 {
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  font-size: 40px;
+  font-size: 36px;
   letter-spacing: 0.15em;
-  margin: 5% 0 0 0; }
+  margin: 2.5% 0 2.5% 0; }
+  @media screen and (min-width: 480px) {
+    h2 {
+      font-size: 48px; } }
+  @media screen and (min-width: 700px) {
+    h2 {
+      font-size: 56px; } }
+  @media screen and (min-width: 1024px) {
+    h2 {
+      font-size: 72px; } }
+
+p {
+  font-size: 14px; }
+  @media screen and (min-width: 480px) {
+    p {
+      font-size: 16px; } }
+  @media screen and (min-width: 640px) {
+    p {
+      font-size: 17px; } }
+  @media screen and (min-width: 1024px) {
+    p {
+      font-size: 19px; } }
 
 /*# sourceMappingURL=main.css.map */

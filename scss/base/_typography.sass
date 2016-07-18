@@ -1,6 +1,9 @@
 h2
   // @include font-face('title-font', '/../fonts/zapfino.ttf', $file-formats: ttf)
   font-family: $georgia
-  font-size: 40px
+  @include font-size($h2-font-sizes)
   letter-spacing: 0.15em
-  margin: 5% 0 0 0
+  margin: 2.5% 0 2.5% 0
+
+p
+  @include font-size($p-font-sizes)

@@ -2,20 +2,20 @@
   @include outer-container(1500px)
 
 .wrapper
-  background: green
+  border: $border
   +clearfix
-  width: 75%
+  width: 70%
   position: relative
-  left: 10%
+  left: 15%
 
 .grid
   width: 100%
-  height: 50em
+  height: 80em
 
 .outer-row
   +clearfix
   @include span-columns(12)
-  background: orange
+  // border: $border
   width: 100%
   height: 100%
   position: absolute
@@ -28,18 +28,18 @@
     padding: 0
     margin: 0
     height: 100%
-    background: moccasin
+    // border: $border
   .one
     @include span-columns(8 of 12)
     .row
       @include span-columns(12 of 12)
-      height: 24.5em
+      height: 49.25%
       margin: 1.5%
-      background: blue
+      border: $border
   .two
     @include span-columns(4 of 12)
     .row
       @include span-columns(12 of 12)
       height: 33%
       margin: 1%
-      background: blue
+      border: $border
