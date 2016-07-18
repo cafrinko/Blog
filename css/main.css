@@ -168,6 +168,14 @@ li:nth-child(6) .color {
     width: 65.88078%; }
     .outer-row .one:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      .outer-row .one {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .outer-row .one:last-child {
+          margin-right: 0; } }
     .outer-row .one .row {
       float: left;
       display: block;
@@ -185,6 +193,9 @@ li:nth-child(6) .color {
     width: 31.76157%; }
     .outer-row .two:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      .outer-row .two {
+        display: none; } }
     .outer-row .two .row {
       float: left;
       display: block;

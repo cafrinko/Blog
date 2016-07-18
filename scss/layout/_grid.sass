@@ -31,6 +31,8 @@
     // border: $border
   .one
     @include span-columns(8 of 12)
+    @media screen and (max-width: 480px)
+      @include span-columns(12 of 12)
     .row
       @include span-columns(12 of 12)
       height: 49.25%
@@ -38,6 +40,8 @@
       border: $border
   .two
     @include span-columns(4 of 12)
+    @media screen and (max-width: 480px)
+      display: none
     .row
       @include span-columns(12 of 12)
       height: 33%
