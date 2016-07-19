@@ -3,7 +3,27 @@ h2
   font-family: $georgia
   @include font-size($h2-font-sizes)
   letter-spacing: 0.15em
-  margin: 2.5% 0 2.5% 0
+  margin: 0
+  padding-bottom: 2.5%
+  border-bottom: 2px solid lightgrey
+  -webkit-text-stroke: 1px black
+  color: #eae2e0
+  text-align: center
+
 
 p
   @include font-size($p-font-sizes)
+  font-family: $helvetica
+  letter-spacing: 2px
+
+.rowlet  p
+  width: 50%
+  position: relative
+  top: -25%
+  left: 80px
+  text-align: left
+
+.category p
+  text-align: center
+  font-size: 18px
+  letter-spacing: 4px
