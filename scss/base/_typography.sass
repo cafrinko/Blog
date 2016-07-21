@@ -1,7 +1,7 @@
-h2
+h1
   // @include font-face('title-font', '/../fonts/zapfino.ttf', $file-formats: ttf)
   font-family: $georgia
-  @include font-size($h2-font-sizes)
+  @include font-size($h1-font-sizes)
   letter-spacing: 0.15em
   margin: 0
   padding-bottom: 2.5%
@@ -10,18 +10,33 @@ h2
   color: #eae2e0
   text-align: center
 
+h2, h3
+  font-family: $lucida-grande
+  letter-spacing: 0.05em
+  color: rgba(176, 224, 230, 30%)
+  font-weight: normal
+  -webkit-text-stroke: 1px black
+
+h2
+  @include font-size($h2-font-sizes)
+  text-align: center
+
+h3
+  @include font-size($h3-font-sizes)
 
 p
   @include font-size($p-font-sizes)
   font-family: $helvetica
   letter-spacing: 2px
+  color: grey
+  font-weight: normal
 
-.rowlet  p
-  width: 50%
-  position: relative
-  top: -25%
+.rowlet .one p
+  // width: 50%
+  position: absolute
+  top: 25%
   left: 80px
-  text-align: left
+  // text-align: left
 
 .category p
   text-align: center

@@ -6,11 +6,11 @@ html {
 
 .sidebar {
   float: left;
-  margin-top: 2%;
+  margin-top: 5%;
   position: absolute;
   left: 0;
   height: 25em;
-  width: 20%; }
+  width: 25%; }
   @media screen and (max-width: 699px) {
     .sidebar {
       width: 100%;
@@ -164,7 +164,6 @@ li:nth-child(6) .color {
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid lightgrey;
   width: 75%;
   position: relative;
   left: 10%;
@@ -229,8 +228,7 @@ li:nth-child(6) .color {
       margin-right: 2.35765%;
       width: 100%;
       height: 49.25%;
-      margin: 1.5%;
-      border: 2px solid lightgrey; }
+      margin: 1.5%; }
       .outer-row .one .row:last-child {
         margin-right: 0; }
   .outer-row .two {
@@ -248,11 +246,35 @@ li:nth-child(6) .color {
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      height: 33%;
+      height: 40%;
       margin: 1%;
-      border: 2px solid lightgrey; }
+      height: 33%;
+      margin: 1%; }
       .outer-row .two .row:last-child {
         margin-right: 0; }
+      .outer-row .two .row .one {
+        position: relative;
+        width: 100%;
+        height: 10%; }
+        .outer-row .two .row .one .about-title {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%); }
+      .outer-row .two .row .two {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .outer-row .two .row .two p {
+          width: 80%;
+          height: 80%;
+          text-align: left;
+          position: absolute;
+          top: 43%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%); }
 
 .header {
   text-align: center;
@@ -286,6 +308,7 @@ li:nth-child(6) .color {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
+  border: 2px solid lightgrey;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px; }
   .row:last-child {
@@ -296,20 +319,52 @@ li:nth-child(6) .color {
     margin-right: 2.35765%;
     width: 100%;
     margin-right: 0;
-    border: 2px solid lightgrey;
+    border-top: 2px solid lightgrey;
+    border-top: 2px solid lightgrey;
     width: 100%;
     height: 10%; }
     .row .rowlet:last-child {
       margin-right: 0; }
+  .row .one {
+    border-top: none;
+    width: 100%;
+    height: 10%;
+    position: relative; }
+    .row .one .username {
+      position: absolute;
+      top: 40%;
+      left: 85px; }
   .row .one .thumbnail {
     margin: 0;
     padding: 0;
     width: 75px;
-    height: 75px; }
+    height: 75px;
+    position: relative; }
     .row .one .thumbnail img {
       max-width: 100%;
       height: 100%;
       border-radius: 50%; }
+  .row .two {
+    position: relative; }
+    .row .two p {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%); }
+  .row .three {
+    width: 100%;
+    height: auto;
+    position: relative; }
+    .row .three p {
+      width: 90%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      text-align: left; }
 
 .post .two {
   width: 100%;
@@ -394,7 +449,7 @@ body {
     content: "";
     display: block; }
 
-h2 {
+h1 {
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 36px;
   letter-spacing: 0.15em;
@@ -405,35 +460,67 @@ h2 {
   color: #eae2e0;
   text-align: center; }
   @media screen and (min-width: 480px) {
-    h2 {
+    h1 {
       font-size: 48px; } }
   @media screen and (min-width: 700px) {
-    h2 {
+    h1 {
       font-size: 56px; } }
   @media screen and (min-width: 1024px) {
-    h2 {
+    h1 {
       font-size: 72px; } }
 
+h2, h3 {
+  font-family: "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
+  letter-spacing: 0.05em;
+  color: powderblue;
+  font-weight: normal;
+  -webkit-text-stroke: 1px black; }
+
+h2 {
+  font-size: 16px;
+  text-align: center; }
+  @media screen and (min-width: 480px) {
+    h2 {
+      font-size: 18px; } }
+  @media screen and (min-width: 640px) {
+    h2 {
+      font-size: 20px; } }
+  @media screen and (min-width: 1024px) {
+    h2 {
+      font-size: 22px; } }
+
+h3 {
+  font-size: 18px; }
+  @media screen and (min-width: 480px) {
+    h3 {
+      font-size: 22px; } }
+  @media screen and (min-width: 640px) {
+    h3 {
+      font-size: 28px; } }
+  @media screen and (min-width: 1024px) {
+    h3 {
+      font-size: 32px; } }
+
 p {
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  color: grey;
+  font-weight: normal; }
   @media screen and (min-width: 480px) {
     p {
-      font-size: 16px; } }
+      font-size: 18px; } }
   @media screen and (min-width: 640px) {
     p {
-      font-size: 17px; } }
+      font-size: 20px; } }
   @media screen and (min-width: 1024px) {
     p {
-      font-size: 19px; } }
+      font-size: 22px; } }
 
-.rowlet p {
-  width: 50%;
-  position: relative;
-  top: -25%;
-  left: 80px;
-  text-align: left; }
+.rowlet .one p {
+  position: absolute;
+  top: 25%;
+  left: 80px; }
 
 .category p {
   text-align: center;

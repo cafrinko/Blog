@@ -1,22 +1,55 @@
 .row
   @include span-columns(12 of 12)
+  border: $border
   border-top-left-radius: 50px
   border-bottom-right-radius: 50px
   .rowlet
     @include span-columns(12 of 12)
     margin-right: 0
-    border: $border
+    border-top: 2px solid lightgrey
+    border-top: 2px solid lightgrey
     width: 100%
     height: 10%
+  .one
+    border-top: none
+    width: 100%
+    height: 10%
+    position: relative
+    .username
+      position: absolute
+      top: 40%
+      left: 85px
   .one .thumbnail
     margin: 0
     padding: 0
     width: 75px
     height: 75px
+    position: relative
     img
       max-width: 100%
       height: 100%
       border-radius: 50%
+  .two
+    position: relative
+    p
+      position: absolute
+      top: 75%
+      left: 50%
+      margin-right: -50%
+      transform: translate(-50%, -50%)
+  .three
+    width: 100%
+    height: auto
+    position: relative
+    p
+      width: 90%
+      height: auto
+      position: absolute
+      top: 50%
+      left: 50%
+      margin-right: -50%
+      transform: translate(-50%, -50%)
+      text-align: left
 
 .post
   .two
