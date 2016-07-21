@@ -16,10 +16,10 @@ html {
 
 .sidebar {
   float: left;
-  margin-top: 5%;
+  margin-top: 7%;
   position: absolute;
   left: 0;
-  height: 25em;
+  height: 32em;
   width: 25%; }
   @media screen and (max-width: 699px) {
     .sidebar {
@@ -35,6 +35,24 @@ html {
       margin: 0 0 0 22%;
       height: 100%; } }
 
+.add-post {
+  background: silver;
+  height: 40px;
+  position: relative;
+  width: 12px;
+  left: 10.5px;
+  top: -30px;
+  border-radius: 15%; }
+  .add-post:after {
+    background: silver;
+    content: "";
+    height: 12px;
+    top: 14.3px;
+    left: -13.5px;
+    position: absolute;
+    width: 40px;
+    border-radius: 15%; }
+
 ul {
   width: 100%;
   height: 100%; }
@@ -46,7 +64,7 @@ ul {
 li {
   float: left;
   width: 100%;
-  height: 16%; }
+  height: 12%; }
   @media screen and (max-width: 699px) {
     li {
       display: inline-block;
