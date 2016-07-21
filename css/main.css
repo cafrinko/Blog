@@ -4,6 +4,16 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.row .three p, .row .four .comments {
+  width: 90%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: left; }
+
 .sidebar {
   float: left;
   margin-top: 5%;
@@ -246,9 +256,7 @@ li:nth-child(6) .color {
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      height: 40%;
-      margin: 1%;
-      height: 33%;
+      height: 30%;
       margin: 1%; }
       .outer-row .two .row:last-child {
         margin-right: 0; }
@@ -256,6 +264,9 @@ li:nth-child(6) .color {
         position: relative;
         width: 100%;
         height: 10%; }
+        @media screen and (max-width: 1024px) {
+          .outer-row .two .row .one {
+            height: 10%; } }
         .outer-row .two .row .one .about-title {
           position: absolute;
           top: 50%;
@@ -271,7 +282,7 @@ li:nth-child(6) .color {
           height: 80%;
           text-align: left;
           position: absolute;
-          top: 43%;
+          top: 42%;
           left: 50%;
           margin-right: -50%;
           transform: translate(-50%, -50%); }
@@ -356,15 +367,23 @@ li:nth-child(6) .color {
     width: 100%;
     height: auto;
     position: relative; }
-    .row .three p {
-      width: 90%;
-      height: auto;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%);
-      text-align: left; }
+  .row .four {
+    width: 100%;
+    height: 10%;
+    display: inline-block;
+    position: relative; }
+    .row .four .comments {
+      float: left;
+      text-decoration: none; }
+    .row .four .plus, .row .four .diamond {
+      float: right;
+      position: absolute; }
+    .row .four .plus {
+      left: 67%;
+      top: 30%; }
+    .row .four .diamond {
+      left: 80%;
+      top: 23%; }
 
 .post .two {
   width: 100%;
@@ -501,20 +520,38 @@ h3 {
     h3 {
       font-size: 32px; } }
 
-p {
+h4 {
+  font-size: 14px;
+  text-align: left;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  letter-spacing: 2px;
+  color: grey;
+  font-weight: normal;
+  margin: 5%; }
+  @media screen and (min-width: 480px) {
+    h4 {
+      font-size: 16px; } }
+  @media screen and (min-width: 640px) {
+    h4 {
+      font-size: 18px; } }
+  @media screen and (min-width: 1024px) {
+    h4 {
+      font-size: 20px; } }
+
+p, a {
   font-size: 16px;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   letter-spacing: 2px;
   color: grey;
   font-weight: normal; }
   @media screen and (min-width: 480px) {
-    p {
+    p, a {
       font-size: 18px; } }
   @media screen and (min-width: 640px) {
-    p {
+    p, a {
       font-size: 20px; } }
   @media screen and (min-width: 1024px) {
-    p {
+    p, a {
       font-size: 22px; } }
 
 .rowlet .one p {

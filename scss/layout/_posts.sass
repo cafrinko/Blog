@@ -42,14 +42,25 @@
     height: auto
     position: relative
     p
-      width: 90%
-      height: auto
+      @extend %center
+  .four
+    width: 100%
+    height: 10%
+    display: inline-block
+    position: relative
+    .comments
+      float: left
+      @extend %center
+      text-decoration: none
+    .plus, .diamond
+      float: right
       position: absolute
-      top: 50%
-      left: 50%
-      margin-right: -50%
-      transform: translate(-50%, -50%)
-      text-align: left
+    .plus
+      left: 67%
+      top: 30%
+    .diamond
+      left: 80%
+      top: 23%
 
 .post
   .two
