@@ -1,17 +1,17 @@
 .header
-  // float: left
   text-align: center
-  // border: $border
   width: 100%
-  height: 250px
+  height: 15%
   background: #eae2e0
-  position: relative
-  // display: table-cell
-  // vertical-align: middle
-  .sun
-    position: absolute
-    left: 30%
-    top: 10%
+  // position: relative
+  border-bottom: 5px dotted white
+  +border-bottom-radius(100%)
+  img
+    max-width: 100%
+    height: auto
+    position: relative
+    left: -10%
+    margin-top: -7%
     @media screen and (min-width: 700px)
       width: 250px
       height: 250px
@@ -21,7 +21,7 @@
     @media screen and (max-width: 479px)
       width: 150px
       height: 150px
-    img
-      max-width: 100%
-      height: auto
-      margin: 0
+    // img
+    //   max-width: 100%
+    //   height: auto
+    //   margin: 0
